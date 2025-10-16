@@ -1,0 +1,232 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+    url("/images/nav-pic.png");
+    background-size: cover;
+    background-position: 40% 20%;
+    height: 13em;
+    width: 100%;
+    margin-top: 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav h1{
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    font-style: Extra Bold;
+    font-size: 2.625rem;
+    letter-spacing: -1%;
+    color: #FFFFFF;
+}
+
+nav a{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 0.875rem;
+    line-height: 5.3em;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+nav a:hover{
+    color: #e09f3e;
+}
+
+.center-input{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -1.4rem;
+}
+
+.search-input-container{
+    align-self: center;
+    display: flex;
+    border: 1px solid #D1D5DB;
+    z-index: 1;
+    height: 2.5em;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: space-between;
+    width: 27em;
+    background-color: #FFFFFF;
+
+}
+
+.search-input-container input{
+    border: none;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0%;
+
+}
+
+.search-input-container i{
+    color: #9CA3AF;
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+
+.search-input-container button{
+    
+    padding: 0.75em 3.77em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 6px;
+    border: none;
+    background-color: #F9FAFB;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 0.825rem;
+    line-height: 20px;
+    letter-spacing: 0%;
+
+}
+
+.film-list .fa-film{
+    margin-top: 2em;
+    align-self: center;
+    font-size: 5rem;
+    color: #DFDDDD;
+}
+
+.film-list h5{
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 1.125rem;
+    text-align: center;
+    color: #DFDDDD;
+
+}
+
+.hidden{
+    display: none;
+}
+
+.film-list{
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+
+.movie-layout{
+    display: flex;
+    margin-bottom: 2em;
+}
+.movie-description div, p, h3{
+    margin: 0;
+    padding: 0;
+}
+
+.movie-description{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 0em;
+    margin: 0.5em 1em 0 1em;
+}
+
+.movie-poster{
+    align-self: flex-start;
+    width: 6.19rem;
+    height: 9.18rem;
+    border-radius: 2.33px;
+    
+}
+
+
+.movie-title-rating{
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    
+}
+
+.movie-title-rating h3{
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 1.125em;
+    line-height: 11.5px;
+    letter-spacing: 0%;
+
+    
+}
+
+.movie-title-rating p{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 0.75em;
+    letter-spacing: 0%;
+    color: #111827;
+
+}
+
+.movie-duration-button{
+    display: flex;
+    gap: 1em;
+    
+}
+
+.movie-duration-button p{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 0.75em;
+    line-height: 20px;
+    letter-spacing: 0%;
+
+}
+.movie-duration-button .fa-square-plus{
+    border-radius: 50px;
+    margin-right: 0.4em;
+
+}
+
+
+.movie-duration-button a{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 0.75em;
+    line-height: 20px;
+    letter-spacing: 0%;
+
+}
+
+.movie-duration-button a:hover{
+    color: #e09f3e;
+    cursor: pointer;
+}
+
+.movie-plot{
+    display: flex;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 0.875em;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #6B7280;
+
+}
